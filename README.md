@@ -31,3 +31,11 @@ A practical collection of Compiler Design programs including Lexical Analysis, F
 flex file.l
 gcc lex.yy.c -o output -lfl
 ./output
+
+### FLEX + BISON Program
+```bash
+bison -d file.y
+flex file.l
+gcc file.tab.c lex.yy.c -o output -lfl
+./output
+
